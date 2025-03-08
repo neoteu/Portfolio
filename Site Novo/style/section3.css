@@ -1,0 +1,215 @@
+.section3{
+    position: relative;
+    background-color: #008CBA;
+    height: 124vh;
+    width: 100vw;
+    background-size: cover;
+    padding-top: 100px;
+
+}
+.section3 h1{
+    position: relative;
+    z-index: 2;
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+    margin: 0;
+    color: #B0C4DE;
+    text-align: center;
+}
+.section3::after{
+    content: ""; /* Obrigatório para pseudo-elementos */
+    position: absolute;
+    z-index: 2;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    background-image: url('./images/shapepixel.png');
+    background-size: contain; /* Garante que a imagem preencha a área */
+    background-position: center;
+    left: 0; 
+    bottom: 0;
+}
+#master3{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#backclouds{
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    top: 200px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    row-gap: 50px;
+
+}
+#cloud1 {
+    height: 100px;
+    width: 100%;
+    background-image: url(./images/Clouds.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    animation: moveClouds1 50s linear infinite; /* Duração de 10 segundos, movimento linear, repetição infinita */
+}
+
+@keyframes moveClouds1 {
+    from {
+        background-position: -50% 0%; /* Começa fora da tela, à esquerda */
+    }
+    to {
+        background-position: 120% 0%; /* Termina fora da tela, à direita */
+    }
+}
+#cloud2 {
+    height: 100px;
+    width: 100%;
+    background-image: url(./images/Clouds.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    animation: moveClouds2 50s linear infinite; /* Duração de 10 segundos, movimento linear, repetição infinita */
+}
+
+@keyframes moveClouds2 {
+    from {
+        background-position: -90% 0%; /* Começa fora da tela, à esquerda */
+    }
+    to {
+        background-position: 100% 0%; /* Termina fora da tela, à direita */
+    }
+}
+#cloud3 {
+    height: 100px;
+    width: 100%;
+    background-image: url(./images/Clouds.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    animation: moveClouds3 40s linear infinite; /* Duração de 10 segundos, movimento linear, repetição infinita */
+}
+
+@keyframes moveClouds3 {
+    from {
+        background-position: -50% 0%; /* Começa fora da tela, à esquerda */
+    }
+    to {
+        background-position: 120% 0%; /* Termina fora da tela, à direita */
+    }
+}
+#cloud4 {
+    height: 100px;
+    width: 100%;
+    background-image: url(./images/Clouds.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    animation: moveClouds4 50s linear infinite; /* Duração de 10 segundos, movimento linear, repetição infinita */
+}
+
+@keyframes moveClouds4 {
+    from {
+        background-position: -90% 0%; /* Começa fora da tela, à esquerda */
+    }
+    to {
+        background-position: 120% 0%; /* Termina fora da tela, à direita */
+    }
+}
+#interfacesobre{
+    padding: 2%;
+    z-index: 2;
+    position: relative;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to bottom, rgba(9, 9, 9, 0.881), rgba(26, 26, 26, 0.881));
+    clip-path: polygon(
+        0 8px,
+        4px 8px,
+        4px 4px,
+        8px 4px,
+        8px 0,
+        calc(100% - 8px) 0,
+        calc(100% - 8px) 4px,
+        calc(100% - 4px) 4px,
+        calc(100% - 4px) 8px,
+        100% 8px,
+        100% calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 4px),
+        calc(100% - 8px) calc(100% - 4px),
+        calc(100% - 8px) 100%,
+        8px 100%,
+        8px calc(100% - 4px),
+        4px calc(100% - 4px),
+        4px calc(100% - 8px),
+        0 calc(100% - 8px)  
+
+      );
+
+}
+#interfacesobre p{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.8rem;
+    line-height: 35px;
+    margin: 0;
+    color: rgb(200, 197, 184);
+    text-align: justify;
+    text-shadow: 1px 1px 50px rgb(35, 87, 159);
+    text-indent: 50px;
+    width: 50%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+    .section3 {
+        padding-top: 50px;
+        height: 150vh;
+
+    }
+
+    .section2 h1 {
+        font-size: 3em;
+    }
+    #master3{
+        height: 90%;
+    }
+    #interfacesobre {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap !important;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #interfacesobre p{
+        width: 90%;
+        height: 80%;
+        font-size: 1.2em;
+        line-height: 25px;
+        margin: 0;
+        text-align: justify;
+        margin-right: 0;
+        text-indent: 25px;
+    }
+    #content1 h1 {
+        font-size: 1.5em;
+    }
+
+    #content1 p {
+        font-size: 1.1em;
+    }
+}

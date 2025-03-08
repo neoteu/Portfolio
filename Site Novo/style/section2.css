@@ -1,0 +1,232 @@
+.section2{
+    display: flex;
+    position: relative;
+    background-color: rgb(35, 35, 35);
+    height: 110vh;
+    width: 100vw;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 5%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+.section2 h1{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+.section2::after{
+    content: ""; /* Obrigatório para pseudo-elementos */
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+    background-image: url('./images/pixeldivider2blue.png');
+    background-size: 150px; /* Garante que a imagem preencha a área */
+    background-position-y:-50px;
+    left: 0; /* Corrigindo o alinhamento */
+    bottom:0; /* Coloca o divisor exatamente abaixo da seção */
+}
+#master2{
+    height: 90%;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 50px;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 25%;
+}
+#card1{
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1252c1;
+    clip-path: polygon(
+        0 8px,
+        4px 8px,
+        4px 4px,
+        8px 4px,
+        8px 0,
+        calc(100% - 8px) 0,
+        calc(100% - 8px) 4px,
+        calc(100% - 4px) 4px,
+        calc(100% - 4px) 8px,
+        100% 8px,
+        100% calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 4px),
+        calc(100% - 8px) calc(100% - 4px),
+        calc(100% - 8px) 100%,
+        8px 100%,
+        8px calc(100% - 4px),
+        4px calc(100% - 4px),
+        4px calc(100% - 8px),
+        0 calc(100% - 8px)  
+
+      );
+
+}
+#content1{
+    display: flex;      
+    height: 395px;
+    width: 295px;
+    background-color: #232323;
+    clip-path: polygon(
+        0 8px,
+        4px 8px,
+        4px 4px,
+        8px 4px,
+        8px 0,
+        calc(100% - 8px) 0,
+        calc(100% - 8px) 4px,
+        calc(100% - 4px) 4px,
+        calc(100% - 4px) 8px,
+        100% 8px,
+        100% calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 4px),
+        calc(100% - 8px) calc(100% - 4px),
+        calc(100% - 8px) 100%,
+        8px 100%,
+        8px calc(100% - 4px),
+        4px calc(100% - 4px),
+        4px calc(100% - 8px),
+        0 calc(100% - 8px)  
+
+      );
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}
+#content1 img{
+    clip-path: circle(50%);
+}
+#content1 h1{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    margin: 0;
+    color: rgb(203, 174, 7);
+    text-align: center;
+}
+#content1 p{
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+    margin: 0;
+    color: rgb(206, 202, 183);
+    text-align: left;
+    text-indent: 5px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+#card2{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1252c1;
+    clip-path: polygon(
+        0 8px,
+        4px 8px,
+        4px 4px,
+        8px 4px,
+        8px 0,
+        calc(100% - 8px) 0,
+        calc(100% - 8px) 4px,
+        calc(100% - 4px) 4px,
+        calc(100% - 4px) 8px,
+        100% 8px,
+        100% calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 4px),
+        calc(100% - 8px) calc(100% - 4px),
+        calc(100% - 8px) 100%,
+        8px 100%,
+        8px calc(100% - 4px),
+        4px calc(100% - 4px),
+        4px calc(100% - 8px),
+        0 calc(100% - 8px)  
+
+      );
+}
+
+#card3{
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1252c1;
+    clip-path: polygon(
+        0 8px,
+        4px 8px,
+        4px 4px,
+        8px 4px,
+        8px 0,
+        calc(100% - 8px) 0,
+        calc(100% - 8px) 4px,
+        calc(100% - 4px) 4px,
+        calc(100% - 4px) 8px,
+        100% 8px,
+        100% calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 8px),
+        calc(100% - 4px) calc(100% - 4px),
+        calc(100% - 8px) calc(100% - 4px),
+        calc(100% - 8px) 100%,
+        8px 100%,
+        8px calc(100% - 4px),
+        4px calc(100% - 4px),
+        4px calc(100% - 8px),
+        0 calc(100% - 8px)  
+
+      );
+}
+@media only screen and (max-width: 900px) {
+    .section2 {
+        padding-top: 50px;
+        height: 100%;
+
+    }
+
+    .section2 h1 {
+        font-size: 3em;
+    }
+
+    #master2 {
+        display: flex;
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        gap: 15px;
+    }
+    #content1 h1 {
+        font-size: 1.5em;
+    }
+
+    #content1 p {
+        font-size: 1.1em;
+    }
+}
